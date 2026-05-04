@@ -55,3 +55,11 @@ WiFi AP SSID/password and any future credentials must not be committed.
 - `readme.md` is the human-facing project doc (BOM, plan, mental model). Update it when phase status or BOM changes.
 - `docs/` holds diagrams and reference material.
 - One `platformio.ini` env per board; v1 is `esp32doit-devkit-v1` only.
+
+## Next steps
+
+1. Order parts (YIKESHU 2WD chassis, ESP32 DOIT V1, L298N, 22 AWG hookup wire, AAs).
+2. When ESP32 arrives: `pio run -t upload -t monitor` with the existing skeleton — confirm toolchain works before any soldering.
+3. Solder motor leads; wire per Random Nerd diagram; pin assignments go in a single header.
+4. Serial-only sanity (blink + motor PWM ramp on bench) before adding WiFi.
+5. Add AP-mode HTTP server and HTML control page; copy `secrets.example.h` → `secrets.h`.
