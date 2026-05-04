@@ -1,0 +1,29 @@
+# macOS
+.DS_Store
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Arduino IDE build output
+build/
+*.elf
+*.bin
+*.hex
+*.map
+
+# PlatformIO
+.pio/
+.pioenvs/
+.piolibdeps/
+
+# ESP-IDF
+sdkconfig.old
+managed_components/
+
+# Local secrets / WiFi credentials
+secrets.h
+*.local.h
+.env
+.env.*
